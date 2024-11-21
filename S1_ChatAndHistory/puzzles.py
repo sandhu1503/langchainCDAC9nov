@@ -7,7 +7,6 @@ os.environ["COHERE_API_KEY"] = "Your API key"
 
 from langchain_cohere import ChatCohere
 
-
 model = ChatCohere(model="command-r")
 
 print(model)

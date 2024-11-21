@@ -5,15 +5,12 @@ import langchain
 # import langchain_cohere
 import cohere.types
 os.environ["COHERE_API_KEY"] = "Your API key"
-
 from langchain_cohere import ChatCohere
-
 
 model = ChatCohere(model="command-r")
 
 print(model)
 print(sys.path)
-
 
 
 def actor_picker():
@@ -46,6 +43,5 @@ def theme_picker():
         "Adventure", "Romance", "Mystery", "Fantasy", "Sci-fi",
         "Horror", "Historical", "Comedy", "Drama", "Thriller"
     ]
-   
     random_index = random.randint(0, len(themes) - 1)
     return themes[random_index]
