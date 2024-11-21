@@ -12,7 +12,6 @@ model = ChatCohere(model="command-r")
 print(model)
 print(sys.path)
 
-
 def actor_picker():
     actors = [
     "Shah Rukh Khan",
